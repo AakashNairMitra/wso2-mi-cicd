@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/default" name="test" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" url-mapping="/test1">
+        <inSequence>
+            <payloadFactory media-type="json">
+                <format>
+                    {"Hello":"Aakash"}
+                </format>
+                <args/>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
